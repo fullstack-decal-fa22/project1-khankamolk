@@ -1,0 +1,163 @@
+/*===============
+  styles
+===============*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    background-color: inherit;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Color palette  */
+.light {
+    --clr-bg: #fcfcfc;
+    --clr-bg-alt: #fff;
+    --clr-fg: #555;
+    --clr-fg-alt: #444;
+    --clr-primary: #9847fa;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* TODO: Implement dark mode */
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  color: var(--clr-fg-alt);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*===============
+  buttons & links
+===============*/
+
+.link {
+    color: var(--clr-primary);
+    padding: 0 0 0.3em 0;
+    font-weight: 100;
+    position: relative;
+}
+  
+.link:hover {
+    color: var(--clr-primary);
+}
+
+
+/*===============
+  layout
+===============*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.nav__links {
+    margin-right: 1.5em;
+    display: flex;
+}
+
+.nav__item {
+    margin-left: 1.5em;
+}
+
+.nav__link {
+    color: var(--clr-fg);
+    text-transform: lowercase;
+    font-weight: 550;
+    padding: 10px;
+}
+
+#about {
+    margin: 5% auto 0;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    width: 90%;
+    flex-direction: column;
+}
+
+.about__title {
+  padding-bottom: 30px;
+}
+
+.about__name {
+    color: var(--clr-primary);
+}
+
+.about__desc {
+    font-weight: 300;
+    font-size: 1.3rem;
+}
+
+.section__title {
+    text-align: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+  }
+
+#education {
+  display: flex;
+  margin: 5% auto 0;
+  padding: 5%;
+  width: 80%;
+  background-color:rgb(241, 241, 241);
+  border-radius: 25px;
+}
+
+.education__desc {
+  display: flex;
+  align-items: left;
+  color: var(--clr-fg);
+}
